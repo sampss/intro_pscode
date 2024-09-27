@@ -24,10 +24,11 @@ BEGIN
             
 END
 
+// need to receive input of a scan before counting an additional two packageCount
+// May wish to modify from while to when a package is scanned.
+/*
     WHILE packageCount is less than or equal to maxPackages
         PRINT packageCount
         INCREMENT packageCount by 2
     END WHILE
-
-// need to receive input of a scan before counting an additional two packageCount
-// May wish to modify from while to when a package is scanned.
+*/
