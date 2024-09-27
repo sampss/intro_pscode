@@ -18,7 +18,7 @@ BEGIN
 
         IF playerGuess === randomNumber 
 
-            PRINT "Lucky Guess!"
+            PRINT "Lucky Guess! You got the Correct Number!"
 
             EXIT
 
@@ -28,13 +28,13 @@ BEGIN
 
         ELSE 
             
+            PRINT "The Correct Answer Was " + randomNumber
             PRINT "Can't Win Them All, Better Luck Next Time!"
 
             EXIT
 
     END While
 
-    PRINT "The Correct Answer Was " + randomNumber
     PRINT "Thanks for Playing"
 
 END
