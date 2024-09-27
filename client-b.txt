@@ -2,3 +2,55 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+BEGIN
+    SET startingPosition TO (0, 0)
+    PROMPT user for target destination coordinates (x, y)
+    WHILE currentPosition is not equal to targetPosition
+        PROMPT user for direction (up, down, left, right)
+        IF direction is up THEN
+            INCREMENT y coordinate of currentPosition
+        ELSE IF direction is down THEN
+            DECREMENT y coordinate of currentPosition
+        ELSE IF direction is right THEN
+            INCREMENT x coordinate of currentPosition
+        ELSE IF direction is left THEN
+            DECREMENT x coordinate of currentPosition
+        END IF
+        PRINT "Current Position: " + currentPosition
+    END WHILE
+    PRINT "You have arrived at your destination."
+END
+
+
+// May wish to create a PERSON object to contain the movement functionality
+// then call PERSON.direction to call the move function.
+
+
+BEGIN
+
+    CREATE object PERSON
+        PERSON.currentPosition = (0,0)
+        PERSON.up = function INCREMENT y coordinate of this.currentPosition
+        PERSON.down = function DECREMENT y coordinate of this.currentPosition
+        PERSON.left = function DECREMENT x coordinate of this.currentPosition
+        PERSON.right = function INCREMENT x coordinate of this.currentPosition
+
+    PROMPT user for target destination coordinates (x, y)
+
+    WHILE PERSON.currentPosition is not equal to targetPosition
+        PROMPT user for direction (up, down, left, right)
+        IF direction is up THEN
+            PERSON.up
+        ELSE IF direction is down THEN
+            PERSON.down
+        ELSE IF direction is right THEN
+            PERSON.right
+        ELSE IF direction is left THEN
+            PERSON.left
+        END IF
+        PRINT "Current Position: " + currentPosition
+    END WHILE
+
+    PRINT "You have arrived at your destination."
+
+END

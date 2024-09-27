@@ -2,3 +2,32 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+BEGIN
+    SET caseCount TO 0
+    SET packageCount TO 0
+    SET maxPackages TO 50
+
+    addListener keypress
+
+    ON keypress
+        addPackages()
+
+    function addPackages
+        IF packageCount < maxPackages - 2
+            packageCount = packageCount + 2
+            PRINT packageCount
+        ELSE IF packageCount == 48
+            packageCount = packageCount + 2
+            PRINT packageCount
+            caseCount++
+            packageCount = 0
+            
+END
+
+    WHILE packageCount is less than or equal to maxPackages
+        PRINT packageCount
+        INCREMENT packageCount by 2
+    END WHILE
+
+// need to receive input of a scan before counting an additional two packageCount
+// May wish to modify from while to when a package is scanned.
