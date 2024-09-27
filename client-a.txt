@@ -28,13 +28,13 @@ BEGIN
 
         ELSE 
             
-            PRINT "The Correct Answer Was " + randomNumber
             PRINT "Can't Win Them All, Better Luck Next Time!"
 
             EXIT
 
     END While
 
+    PRINT "The Correct Answer Was " + randomNumber
     PRINT "Thanks for Playing"
 
 END
