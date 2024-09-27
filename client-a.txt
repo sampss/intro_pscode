@@ -2,3 +2,42 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+BEGIN
+    
+    SET randomNumber to Random Number between 1 and 10;
+
+    SET NumberGuesses to 0;
+
+    SET MaxGuesses to 3;
+
+    While NumberGuesses < MaxGuesses
+
+        playerGuess == PROMPT player to input a Number
+
+        INCREMENT NumberGuesses by 1
+
+        IF playerGuess === randomNumber 
+
+            PRINT "Lucky Guess!"
+
+            EXIT
+
+        ELSE IF playerGuess is != TO randomNumber && NumberGuesses < MaxGuesses
+
+            PRINT "Whoopsie! Try Again!"
+
+        ELSE 
+            
+            PRINT "The Correct Answer Was " + randomNumber
+
+            EXIT
+
+    END While
+
+    PRINT "Can't Win Them All, Better Luck Next Time!"
+
+END
+
+
+
+
